@@ -54,3 +54,48 @@ section#contact {
   padding-top: 70px;
   padding-bottom: 130px;
 }
+
+.name h1 {
+  text-transform: capitalize;
+  font-family: var(--abril);
+  font-size: 75px;
+  color: black;
+  overflow: hidden;
+}
+
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+
+  49% {
+    background-color: #ccc;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
+#home .container .row h1 .cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+
+#home .container .row h1 .cursor .typing {
+  animation: none;
+}
+
+#home .container .row .text span {
+  color: var(--purple);
+}
